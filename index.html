@@ -1,18 +1,76 @@
-`Hey coders!`
-
-It's me Malvin King, follow the steps below to host your website at zero cost
-
-«««{HTML Tip}»»»
-
-Use the `<html>` tag to define the structure of your webpage:
-```
+<!DOCTYPE html>
 <html>
 <head>
-<title>My Website</IMORTAL MD>
+  <title>IMORTAL MD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      color: #007aff;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #c8c8c8;
+      font-size: 16px;
+    }
+    button {
+      background-color: #007aff;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #c8c8c8;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-<body>
-<h1>Welcome to my website!</h1>
+<body><!-- https://whatsapp.com/channel/0029VaafMrsHrDZlkflD0B2Y-->
+  <h1>IMORTL_MD</h1>
+  <form id="codeForm">
+    <textarea id="code" rows="15" placeholder="Enter your HTML and CSS code here"></textarea>
+    <br>
+    <button type="button" onclick="runCode()">Run Code</button>
+  </form>
+
+  <iframe id="outputFrame"></iframe>
+<!-- https://whatsapp.com/channel/0029VaafMrsHrDZlkflD0B2Y -->
+  <footer>
+    &copy; 2024 IMORTAL MD
+  </footer>
+<!-- @IMORTAL MD https://whatsapp.com/channel/0029VaafMrsHrDZlkflD0B2Y -->
+  <script>
+    function runCode() {
+      var code = document.getElementById('code').value;
+      var outputFrame = document.getElementById('outputFrame').contentWindow.document;
+      outputFrame.open();
+      outputFrame.write(code);
+      outputFrame.close();
+    }
+  </script>
 </body>
 </html>
-```
-«««{Hosting Tutorial}»»» 
+
+<!--https://whatsapp.com/channel/0029VaafMrsHrDZlkflD0B2Y -->
